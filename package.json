@@ -1,0 +1,12 @@
+{
+  "name": "@commander-lol/validate",
+  "version": "1.0.0",
+  "description": "Simple & powerful schema validation library",
+  "main": "validate.js",
+  "author": "Louis Capitanchik <contact@louiscap.co>",
+  "license": "BSD-2-Clause",
+  "repository": {
+    "url": "git@github.com:Commander-lol/node-validate.git",
+    "type": "git"
+  }
+}
