@@ -1,5 +1,6 @@
 {
   "name": "@commander-lol/validate",
+	"private": false,
   "version": "1.0.0",
   "description": "Simple & powerful schema validation library",
   "main": "validate.js",
