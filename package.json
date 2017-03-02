@@ -1,7 +1,7 @@
 {
   "name": "@commander-lol/validate",
 	"private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple & powerful schema validation library",
   "main": "validate.js",
   "author": "Louis Capitanchik <contact@louiscap.co>",

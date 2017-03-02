@@ -2,16 +2,17 @@ module.exports = rules => fields => {
 	const identity = {}
 	let errors = identity
 
-	for (const [field, value] of Object.entries(fields)) {
-		let ruleset = rules[field]
+	for (const name in rules) {
+		let value = fields[name]
+		let ruleset = rules[name]
 		if (ruleset != null) {
 			if (!Array.isArray(ruleset)) {
 				ruleset = [ruleset]
 			}
 			for (const rule of ruleset) {
 				const err = rule(value)
-				if (err != null) {
-					errors = Object.assign({}, errors, { [field]: err })
+				if (!!err) {
+					errors = Object.assign({}, errors, { [name]: err })
 					break
 				}
 			}
